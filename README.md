@@ -19,7 +19,8 @@ Requirements:
     1. user-selected ac-s file should be a hdf5 file consisting of the following variables:   
         a. A_CORR - matrix of single absorption spectra (m x n): m indicates the number of spectra; n indicates the number of ac-s channels, or wavelengths.
         b. C_CORR - matrix of single attenuation spectra (m x n), m indicates the number of spectra and n indicating the number of ac-s channels, or wavelengths.
-            *A_CORR and C_CORR should be the same size. Except for undetected scatter, all other corrections should already be applied (e.g. temperature, salinity, pure                    water calibration, etc.)*
+            *A_CORR and C_CORR should be the same size. Except for undetected scatter, all other corrections should already be applied (e.g. temperature, salinity, pure                    water calibration, etc.)
+            *My respository "acsPROCESS_INTERACTIVE" outputs data in the above-described format
         c. deptH - array of depths corresponding to the depths each individual ac-s spectrum
         d. a_wv - array of central wavelengths of each ac-s channel. Attenuation channels are slightly offset from absorption channels, however, this repository assumes that           attenuation data has been interpolated for centered wavelengths of absorption channels prior to use.
      2. user-selected particulate backscattering file should exist in a Hydrolight-compatible ascii (.txt) format. This mean sigma-corrected and depth-binned.
