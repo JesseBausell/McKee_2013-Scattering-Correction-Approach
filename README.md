@@ -23,3 +23,6 @@ Requirements:
         c. deptH - array of depths corresponding to the depths each individual ac-s spectrum
         d. a_wv - array of central wavelengths of each ac-s channel. Attenuation channels are slightly offset from absorption channels, however, this repository assumes that           attenuation data has been interpolated for centered wavelengths of absorption channels prior to use.
      2. user-selected particulate backscattering file should exist in a Hydrolight-compatible ascii (.txt) format. This mean sigma-corrected and depth-binned.
+
+Outputs:
+McKee_2013-Scattering-Correction-Approach will create a new folder titled "McKee_2013" inside the folder that contained the ac-s file selected by the user. The repository will place 10 hydrolight-compatible ac-s ascii files inside this folder. Filenames will mimick the name of the user-selected asii file (see step 1), except that they will be identifiable by their endings, which correspond to the r_w used to correct data. For example, "_Mc13_0950" corresponds to r_w being set equal to 0.95, where "_Mc13_1000" corresponds to r_w being equal to 1.
